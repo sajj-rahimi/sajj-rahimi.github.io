@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Introduction | Vue Steps Progress Bar</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="Vue steps progress bar">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/assets/css/0.styles.1e616eb3.css" as="style"><link rel="preload" href="/assets/js/app.05c525f5.js" as="script"><link rel="preload" href="/assets/js/2.574e60c1.js" as="script"><link rel="preload" href="/assets/js/11.b0fa9ad8.js" as="script"><link rel="prefetch" href="/assets/js/10.aa786312.js"><link rel="prefetch" href="/assets/js/12.48c99750.js"><link rel="prefetch" href="/assets/js/13.1f40be32.js"><link rel="prefetch" href="/assets/js/3.92d0cf36.js"><link rel="prefetch" href="/assets/js/4.e0cd3925.js"><link rel="prefetch" href="/assets/js/5.d0693791.js"><link rel="prefetch" href="/assets/js/6.29235260.js"><link rel="prefetch" href="/assets/js/7.018205db.js"><link rel="prefetch" href="/assets/js/8.f41bae60.js"><link rel="prefetch" href="/assets/js/9.46485af2.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.1e616eb3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Vue Steps Progress Bar</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Guide
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guide/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Guide
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Guide</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/" aria-current="page" class="active sidebar-link">Introduction</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/#install-the-plugin-with-npm" class="sidebar-link">Install the plugin with npm</a></li><li class="sidebar-sub-header"><a href="/guide/#usage" class="sidebar-link">Usage</a></li><li class="sidebar-sub-header"><a href="/guide/#methods" class="sidebar-link">Methods</a></li></ul></li><li><a href="/guide/using-vue.html" class="sidebar-link">Demo</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="introduction"><a href="#introduction" class="header-anchor">#</a> Introduction</h1> <h2 id="install-the-plugin-with-npm"><a href="#install-the-plugin-with-npm" class="header-anchor">#</a> Install the plugin with npm</h2> <div class="language- extra-class"><pre class="language-text"><code>npm install vue-steps-progress-bar
+</code></pre></div><h2 id="usage"><a href="#usage" class="header-anchor">#</a> Usage</h2> <p>import the component and pass the options</p> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>steps-progress-bar</span> <span class="token attr-name">:options</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>options<span class="token punctuation">&quot;</span></span> <span class="token attr-name">ref</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>progress<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tepmlate</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">import</span> StepsProgressBar <span class="token keyword">from</span> <span class="token string">'vue-steps-progress-bar'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  components<span class="token operator">:</span> <span class="token punctuation">{</span>
+        StepsProgressBar
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">data</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      options<span class="token operator">:</span> <span class="token punctuation">{</span>
+          maxWidth<span class="token operator">:</span> <span class="token string">'100%'</span><span class="token punctuation">,</span>
+          nodeWidth<span class="token operator">:</span> <span class="token number">40</span><span class="token punctuation">,</span>
+          nodeHeight<span class="token operator">:</span> <span class="token number">40</span><span class="token punctuation">,</span>
+          barHeight<span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+          showTooltip<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+          showContent<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+
+          <span class="token comment">// barType can be dashed or solid</span>
+          barType<span class="token operator">:</span> <span class="token string">'dashed'</span><span class="token punctuation">,</span>
+
+          <span class="token comment">// expects a function</span>
+          onNext<span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>onNext<span class="token punctuation">,</span>
+
+          <span class="token comment">// expects a function</span>
+          onFinish<span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>onFinish<span class="token punctuation">,</span>
+
+          nodes<span class="token operator">:</span> <span class="token punctuation">[</span>
+              <span class="token punctuation">{</span>
+                content<span class="token operator">:</span><span class="token string">'step 1'</span><span class="token punctuation">,</span>
+                tooltip<span class="token operator">:</span><span class="token string">'sth about step 1'</span>
+              <span class="token punctuation">}</span><span class="token punctuation">,</span>
+              <span class="token punctuation">{</span>
+                content<span class="token operator">:</span><span class="token string">'step 2'</span><span class="token punctuation">,</span>
+                tooltip<span class="token operator">:</span><span class="token string">'sth about step 2'</span>
+              <span class="token punctuation">}</span><span class="token punctuation">,</span>
+              <span class="token punctuation">{</span>
+                content<span class="token operator">:</span><span class="token string">'step 3'</span><span class="token punctuation">,</span>
+                tooltip<span class="token operator">:</span><span class="token string">'sth about step 3'</span>
+              <span class="token punctuation">}</span><span class="token punctuation">,</span>
+              <span class="token punctuation">{</span>
+                content<span class="token operator">:</span><span class="token string">'step 4'</span><span class="token punctuation">,</span>
+                tooltip<span class="token operator">:</span><span class="token string">'sth about step 4'</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="methods"><a href="#methods" class="header-anchor">#</a> Methods</h2> <p>call component methods using refs</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">someDummyFunction</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// goes to the next step</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">.</span>progress<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+        <span class="token comment">// goes to the previous step</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">.</span>progress<span class="token punctuation">.</span><span class="token function">prev</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+        <span class="token comment">// restarts the step progress bar</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">.</span>progress<span class="token punctuation">.</span><span class="token function">restart</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="that-s-it-😁"><a href="#that-s-it-😁" class="header-anchor">#</a> That's it 😁</h3></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/guide/using-vue.html">
+        Demo
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.05c525f5.js" defer></script><script src="/assets/js/2.574e60c1.js" defer></script><script src="/assets/js/11.b0fa9ad8.js" defer></script>
+  </body>
+</html>
